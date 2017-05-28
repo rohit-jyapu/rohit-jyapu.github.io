@@ -1,0 +1,591 @@
+/*Global starts*/
+
+body{
+	margin: 0;
+	font-family: arial;
+}
+
+.center{
+	width: 960px;
+	margin: auto;
+}
+img{
+	display: block;
+}
+.clear{
+	clear: both;
+	display: block;
+}
+
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+
+/*Global ends*/
+
+
+.test {
+	height: 100px;
+	background: #090;
+}
+
+/*Header starts*/
+
+.logo{
+	float: left;
+	margin: 5px 0 19px 0;
+}
+
+header form{
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+header form h3{
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #6ba6de;
+	font-size: 24px;
+	margin: 13px 0 2px 0;
+}
+
+header form div{
+	border: 1px solid #cccccc;
+	background: #f8f8f8;
+
+}
+
+header form input{
+	float: left;
+	background: transparent;
+	border:none;
+	width: 99px;
+	height: 30px;
+	padding: 0 12px;
+}
+
+header form input[type=submit]{
+	width: 34px;
+	background: url(../images/bg-submit.png) center center no-repeat;
+}
+
+header span{
+	float: left;
+	width: 1px;
+	height: 16px;
+	background: #aeaeae;
+	margin-top: 7px;
+}
+
+header form a{
+	float: left;
+	text-decoration: underline;
+	color: #007dd1;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	padding-right: 7px;
+	margin-top: 2px;
+}
+/*Header ends*/
+
+/*Navigation starts*/
+nav{
+	background-color: #004a8c;
+	border-bottom: 1px solid #4074a2;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+nav li{
+	float: left;
+	list-style: none;
+	margin-right: 2px;
+}
+
+nav li .active{
+	background-color: #007acb;
+}
+
+nav a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	height: 46px;
+	line-height: 46px;
+	padding: 0 13px;
+}
+
+nav a:hover{
+	color: orange;
+}
+
+nav li .active:hover{
+	color: white;
+	cursor: default;
+}
+
+/*Navigation ends*/
+
+/*Banner starts*/
+
+.banner{
+	background-color: #007dd1;
+	border-top: 6px solid #004a8c;
+}
+
+.bleft{
+	float: left;
+	width: 560px;
+}
+
+.bright{
+	float: left;
+	width: 320px;
+	height: 277px;
+	background: url(../images/bright-back.png);
+	padding: 26px 40px;
+}
+
+.bright h3{
+	margin: 0;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 34px;
+	font-weight: 300;
+	line-height: 36px;
+
+}
+
+.bright p{
+	margin: 15px 0 19px 0 ;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.btn{
+	text-decoration: none;
+	background-color: #fff;
+	color: #007dd1;
+	display: inline-block;
+	padding: 0 48px 0 15px;
+	height: 38px;
+	line-height: 38px;
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+
+}
+
+.btn:hover{
+	color: #fff;
+	background-color: #00498a;
+}
+
+.btn:hover span{
+	background-color: #fff;
+}
+
+.btn:hover .arrow{
+	border-left: 6px solid #fff;
+}
+
+.btn:hover .arrow2{
+	border-left: 6px solid #007dd1;
+}
+
+.btn span{
+	height: 22px;
+	width: 22px;
+	border-radius: 50%;
+	background-color: #007dd1;
+	display: inline-block;
+	position: absolute;
+	right: 14px;
+	top: 8px;
+}
+
+.arrow{
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 6px solid #007dd1;
+	position: absolute;
+	top: 5px;
+	right: 8px;
+	z-index: 2;
+}
+
+.arrow2{
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 6px solid #fff;
+	position: absolute;
+	top: 5px;
+	right: 7px;
+	z-index: 1;
+}
+
+.btn2{
+	background-color: #007dd1;
+	color: #fff;
+}
+
+.btn2 span{
+	background-color: #005792;
+}
+
+.btn2 span .arrow{
+	border-left: 6px solid #005792;
+}
+
+/*Banner ends*/
+
+/*About starts*/
+
+
+
+.aleft{
+	float: left;
+	width: 560px;
+}
+
+.aleft h3{
+	color: #007dd1;
+	font-size: 42px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin: 36px 0 0 -4px;
+}
+
+.aleft p{
+	color: black;
+	margin: 9px 70px 18px 0;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.tabs{
+	float: left;
+	width: 400px;
+	margin-top: 40px;
+}
+
+.tab-bar{
+	margin: 0;
+	padding: 0;
+}
+
+.tab-bar li{
+	float: left;
+	list-style: none;
+	margin-right: 2px;
+}
+
+.tab-bar a{
+	display: block;
+	color: black;
+	padding: 0 20px;
+	height: 47px;
+	line-height: 47px;
+	background: #fee9b6;
+	font-size: 16px;
+	font-weight: 500;
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.tab-bar a span{
+	position: absolute;
+	background-color: #fdda85;
+	top: 45px;
+	left: 0;
+	width: 100%;
+	height: 10px;
+}
+
+.tab-bar a strong{
+	position: absolute;
+	height: 17px;
+	border-radius: 20%;
+	background-color: #9d0000;
+	top: -6px;
+	right: 5px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 10px;
+	color: #fff;
+	line-height: 17px;
+	padding: 0 8px;
+}
+
+.tab-bar a small{
+	position: absolute;
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 6px solid #9d0000;
+	top:9px;
+	left: 0px;
+
+}
+
+/*.tab-bar a ins{
+	position: absolute;
+	top:-15px;
+	right: 7px;
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+}*/
+
+.tab-bar li .active{
+	border: 1px solid #caae6a;
+	border-bottom: none;
+	background: #fdda85;
+	height: 48px;
+	line-height: 48px;
+}
+
+.tab-contents{
+	background-color: #fdda85;
+	border: 1px solid #caae6a;
+	padding: 24px;
+}
+
+.tab-contents ul{
+	margin: 0;
+	padding: 0;
+	height: 170px;
+	overflow: auto;
+}
+
+.tab-contents li{
+	list-style: none;
+	margin-top: 15px;
+}
+
+.tab-contents li:first-child {
+	margin-top: 0;
+}
+
+.tab-date{
+	float: left;
+	width: 65px;
+	text-align: center;
+	margin-right: 15px;
+}
+
+.tab-date strong{
+	display: block;
+	background-color: #9d0000;
+	color: white;
+	font-size: 32px;
+	height: 39px;
+	line-height: 39px;
+}
+
+.tab-date span{
+	display: block;
+	background-color: #3f0000;
+	color: white;
+	font-size: 12px;
+	height: 25px;
+	line-height: 25px;
+}
+
+.tab-details{
+	float: left;
+	width: 250px;
+	margin: -3px;
+}
+
+.tab-details h3{
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #9d0000;
+	text-decoration: underline;
+	line-height: 17px;
+	margin: 0 0 0 0;
+}
+
+.tab-details p{
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 2px 0 0 0;
+	line-height: 17px;
+}
+/*About ends*/
+
+/*Slogan starts*/
+
+.slogan{
+	margin-top: 35px;
+	background-color: #f2f2f2;
+	border-top: 2px solid #d9d9d9;
+	border-bottom: 2px solid #fff;
+}
+
+.slogan img{
+	margin: 40px 0;
+	float: left;
+}
+
+.slogan-desc{
+	float: left;
+	margin: 40px 0;
+}
+
+.slogan-desc h3{
+	letter-spacing: -1px;
+	font-size: 34px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #007dd1;
+	margin: -6px 0 0 24px;
+}
+
+.slogan-desc strong{
+	color: #252525;
+}
+
+.slogan-desc span{
+	font-weight: 600;
+	color: #004c90;
+}
+
+.slogan-desc p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	width: 314px;
+	float: left;
+	margin: 7px 0 0 24px;
+	line-height: 22px;
+}
+/*slogan ends*/
+
+/*nav2 starts*/
+
+.nav2{
+	background-color: #b2b2b2;
+}
+
+.nav2 ul{
+	margin:0;
+	padding: 0;
+}
+.nav2 li{
+	list-style: none;
+	float: left;
+}
+
+.nav2 a{
+	display: block;
+	color: white;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	height: 46px;
+	line-height: 46px;
+	padding-right: 26px;
+}
+
+.nav2 a:hover{
+	color: #004c90;
+}
+/*nav2 ends*/
+
+/*footer starts*/
+
+
+
+/*footer ends*/
+
+/*foot starts*/
+footer .center > div{
+	float: left;
+	margin: 35px 60px 0 0;
+}
+
+footer .center > div:first-child + div span{
+	background: #fff url(../images/call.png) left center no-repeat;
+	display: block;
+	padding-left: 42px;
+	margin-bottom: 7px;
+}
+
+footer .center > div:first-child + div span:last-child {
+	background: #fff url(../images/mail.png) left center no-repeat;
+}
+footer strong{
+	display: block;
+	color: #007dd1;
+	text-decoration: underline;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+footer p{
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 6px 0 17px 0;
+}
+
+.furax small{
+	display: block;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	color: #4c4c4c;
+
+}
+
+.foot .center{
+	border-top: 1px solid #cccccc;
+}
+
+.foot .fdetails{
+	float: left;
+}
+
+.foot p{
+	float: left;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 14px 0 30px 0;
+}
+
+.foot img{
+	float: left;
+	margin: 14px 0 0 6px;
+}
+
+.foot .fdetails .unique{
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+	font-weight: 700;
+	float: left;
+	margin: 16px 0 0 2px;
+}
+
+.foot p a{
+	color: #000;
+}
+/*foot ends*/
+
+footer .center > div:last-child > div {
+	float: left;
+	margin: 10px 10px 0 0;
+}
