@@ -1,15 +1,52 @@
 body{
 	margin: 0;
-	background-color: #ccc;
+	background: url(images/nature1.jpg) no-repeat;
+	
+	
+}
+
+@media screen and (min-width: 480px){
+	body{
+		background-color: ;
+	}
+	
 }
 
 .center{
 	width: 960px;
 	margin:auto;
 }
+			
+			nav{
+				width: 100%;
+			}
+			nav ul {
+				float: right;
+			    list-style-type: none;
+			    margin: 0;
+			    padding: 0;
+			    overflow: hidden;		
+			    }
+
+			nav li {
+			    float: left;
+			}
+
+			nav li a {
+			    display: block;
+			    color: #ccc;
+			    text-align: center;
+			    padding: 14px 16px;
+			    text-decoration: none;
+			    font-family: 'Open Sans', sans-serif;
+			}
+
+			nav li a:hover {
+			    color: #fff;
+			}
 
 header{
-	background-color: #022d56;
+	background-color: rgba(0,0,0,.5);
 	padding: 50px 0;
 }
 
@@ -30,11 +67,14 @@ header img{
 	margin-left: 20px;
 }
 
+
+
 .myself h2{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	color: #fff;
 	margin: 0;
+	padding-top: 120px;
 	font-size: 40px;
 }
 
@@ -46,6 +86,7 @@ header img{
 
 .works{
 	margin-top: 5px;
+	
 }
 
 .works h4{
@@ -61,7 +102,7 @@ header img{
 
 .works ul{
 	margin: 0;
-	background-color: #3b195d;
+	background-color: rgba(59,25,93,.7);
 	padding: 10px;
 }
 
@@ -76,10 +117,47 @@ header img{
 	color: #927fa5;
 	text-decoration: none;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 .works a:hover{
-	color: yellow;
+	color: #fff;
 }
 
+@media screen and (max-width: 480px){
+
+	nav{
+		width: 380px;
+		float: left;
+	}
+	nav ul{
+		float: left;
+		padding-left: 5px;
+	}
+
+	header img{
+		float: left;
+		width: 320px;
+		height: auto;
+	}
+
+	.myself{
+		width:100%;
+		float: left;
+	}
+
+	.myself >h2{
+	font-size: 20px;
+	padding-top: 20px;
+	}
+
+	.myself h5{
+		padding-top: 10px;
+		margin-top: 0;
+	}
+
+	.works h4{
+		text-align: left;
+		padding-left: 30px;
+	}
+}
