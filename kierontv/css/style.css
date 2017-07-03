@@ -1437,4 +1437,57 @@ header h3{
 
 	.rf-right{
 		float: right;
-	}
+		margin-top: 27px;
+	}	
+			.rf-right a{
+				float: left;
+				width: 32px;
+				height: 32px;
+				background: #f9ddde url(../images/icon-facebook.png) center center no-repeat;
+				margin-left: 10px;
+			}
+
+			.rf-right .twitter{
+				background: #f9ddde url(../images/icon-twitter.png) center center no-repeat;
+			}
+
+			.rf-right .google-plus{
+				background: #f9ddde url(../images/icon-gplus.png) center center no-repeat;
+			}
+
+			.rf-right .rss{
+				background: #f9ddde url(../images/icon-rss.png) center center no-repeat;
+			}
+
+			.rf-right .mail{
+				background: #f9ddde url(../images/icon-mail.png) center center no-repeat;
+			}
+
+
+		
+		.rf-right-bot{
+			float: right;
+			margin-top: 20px;
+		}	
+			.rf-right-bot p{
+				float: left;
+				margin: 0;
+				font-size: 12px;
+				font-family: arial;
+				font-weight: 400;
+				padding-right: 5px;
+			}
+
+			.rf-right-bot img{
+				float: left;
+				margin-right:1px;
+			}
+
+			.rf-right-bot h5{
+				text-transform: uppercase;
+				float: right;
+				margin: 0;
+				font-family: arial;
+				font-weight: 700;
+				font-size: 14px;
+			}
