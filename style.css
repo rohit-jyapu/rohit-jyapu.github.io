@@ -12,6 +12,12 @@ body{
 	
 }
 
+.test{
+	width: 200px;
+	height: 200px;
+	background: #090;
+}
+
 .center{
 	width: 960px;
 	margin:auto;
@@ -163,3 +169,74 @@ header img{
 		padding-left: 30px;
 	}
 }
+
+
+/*contacts starts*/
+.contacts{
+	margin: 10px 0;
+	width: 100%;
+	
+}
+
+.contacts h4{
+	color: #CC9966;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 32px;
+	margin: 0;
+	padding: 10px 0;
+	text-align: center;
+	background: #1B1811;
+}
+
+.contact-details{
+	background: rgba(29,17,16,.7);
+	padding: 100px 150px;
+}
+
+.contacts a{
+	text-decoration: none;
+	margin: 0;
+	padding: 0 30px !important;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+
+}
+
+.contacts a:hover{
+	color: #fff;
+}
+
+.contacts img{
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+	
+/*contacts ends*/
+
+/*footer start*/
+
+footer {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(red, black, transparent 70%); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(red, black, transparent 70%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(red, black, transparent 70%); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(red, black, transparent 70%); /* Standard syntax */
+}
+
+footer h5 {
+	margin: 10px 0 ;
+	padding: 0 !important;
+    height: 70px;
+    line-height: 70px;
+    padding-top: 14px;
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+/*footer ends*/
