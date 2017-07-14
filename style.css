@@ -61,6 +61,11 @@ header img{
 	float: left;
 	width: 320px;
 	margin-left: 20px;
+	transition: .5s;
+}
+
+header img:hover{
+	transform: rotate(7deg);
 }
 
 .clearfix:after{
