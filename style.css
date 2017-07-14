@@ -1,6 +1,7 @@
 body{
 	margin: 0;
-	background: url(images/nature1.jpg) no-repeat;
+	background: url(images/nature123.jpg) 0 0 no-repeat;
+	font-family: 'Open Sans', sans-serif;
 	
 	
 }
@@ -173,13 +174,17 @@ header img{
 
 /*contacts starts*/
 .contacts{
-	margin: 10px 0;
+	background:	#333;
+	margin: 10px 0 0 0;
 	width: 100%;
+	border-bottom: 2px solid #eee;
+	border-top: 2px solid #4c4c4c;
+	padding: 50px 0;
 	
 }
 
 .contacts h4{
-	color: #CC9966;
+	color: #ccc;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	font-size: 32px;
@@ -190,8 +195,8 @@ header img{
 }
 
 .contact-details{
-	background: rgba(29,17,16,.7);
-	padding: 100px 150px;
+	/*background: rgba(29,17,16,.5);*/
+	padding: 50px 150px;
 }
 
 .contacts a{
@@ -204,6 +209,10 @@ header img{
 	line-height: 50px;
 	float: left;
 
+}
+
+.contacts img{
+	float: left;
 }
 
 .contacts a:hover{
@@ -221,15 +230,12 @@ header img{
 /*footer start*/
 
 footer {
-  background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(red, black, transparent 70%); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(red, black, transparent 70%); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(red, black, transparent 70%); /* For Firefox 3.6 to 15 */
-  background: radial-gradient(red, black, transparent 70%); /* Standard syntax */
+  background: #d81c23;
+
 }
 
 footer h5 {
-	margin: 10px 0 ;
+	margin: 0 ;
 	padding: 0 !important;
     height: 70px;
     line-height: 70px;
@@ -240,3 +246,39 @@ footer h5 {
     font-weight: 300;
 }
 /*footer ends*/
+
+/*about-me starts*/
+.about-me{
+	color: #ccc;
+    background: rgba(0,0,0,.5);
+    margin-top: 10px;
+}
+
+.about-me h4{
+	margin: 0;
+	background: #000;
+	padding: 0;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.about-me p{
+	margin: 0px;
+	padding: 20px 30px;
+	font-family: arial;
+    font-weight: 300;
+    text-align: center;
+    line-height: 26px;
+}
+
+.about-me p strong{
+	color: #d81c23;;
+}
+
+.about-me p span{
+	color: #d81c23;;
+}
+/*about-me ends*/
