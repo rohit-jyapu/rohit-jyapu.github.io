@@ -101,7 +101,7 @@ header img{
 	font-weight: 300;
 	font-size: 32px;
 	color: #ccc;
-	background-color: #000;
+	background: rgba(0,0,0,.8);
 	margin: 0;
 	padding: 10px 0;
 	text-align: center;
@@ -195,7 +195,6 @@ header img{
 }
 
 .contact-details{
-	/*background: rgba(29,17,16,.5);*/
 	padding: 50px 150px;
 }
 
@@ -259,12 +258,11 @@ footer h5 {
 
 .about-me h4{
 	margin: 0;
-	background: #000;
+	background: rgba(0,0,0,.8);
 	padding: 0;
 	text-align: center;
-	height: 50px;
-	line-height: 50px;
-	font-size: 30px;
+	font-size: 32px;
+	padding: 10px 0;
 	font-weight: 300;
 }
 
