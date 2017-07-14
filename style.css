@@ -53,7 +53,7 @@ body{
 			}
 
 header{
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0,0,0,.3);
 	padding: 50px 0;
 }
 
@@ -100,8 +100,8 @@ header img{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	font-size: 32px;
-	color: #927fa5;
-	background-color: #26004c;
+	color: #ccc;
+	background-color: #000;
 	margin: 0;
 	padding: 10px 0;
 	text-align: center;
@@ -109,7 +109,7 @@ header img{
 
 .works ul{
 	margin: 0;
-	background-color: rgba(59,25,93,.7);
+	background-color: rgba(0,0,0,.3);
 	padding: 10px;
     
 }
@@ -122,14 +122,14 @@ header img{
 }
 
 .works a{
-	color: #927fa5;
+	color: #ccc;
 	text-decoration: none;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 }
 
 .works a:hover{
-	color: #fff;
+	font-weight: 400;
 }
 
 
@@ -211,13 +211,16 @@ header img{
 
 }
 
+.contacts a:hover{
+	transform: rotate(360deg);
+	transition: .5s;
+}
+
+
 .contacts img{
 	float: left;
 }
 
-.contacts a:hover{
-	color: #fff;
-}
 
 .contacts img{
 	width: 50px;
@@ -250,7 +253,7 @@ footer h5 {
 /*about-me starts*/
 .about-me{
 	color: #ccc;
-    background: rgba(0,0,0,.5);
+    background: rgba(0,0,0,.3);
     margin-top: 10px;
 }
 
@@ -267,7 +270,7 @@ footer h5 {
 
 .about-me p{
 	margin: 0px;
-	padding: 20px 30px;
+	padding: 40px 30px;
 	font-family: arial;
     font-weight: 300;
     text-align: center;
