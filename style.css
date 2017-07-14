@@ -110,6 +110,7 @@ header img:hover{
 	margin: 0;
 	padding: 10px 0;
 	text-align: center;
+	
 }
 
 .works ul{
@@ -182,12 +183,18 @@ header img:hover{
 	background:	#333;
 	margin: 0;
 	width: 100%;
-	border-bottom: 2px solid #eee;
 	border-top: 2px solid #4c4c4c;
-	padding: 50px 0;
-	
+	padding: 0;
 }
 
+.contacts .center{
+	background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, #333); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, #333); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, #333); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, #333); /* Standard syntax */
+	
+}
 .contacts h4{
 	color: #ccc;
 	font-family: 'Open Sans', sans-serif;
@@ -244,8 +251,8 @@ footer {
 footer h5 {
 	margin: 0 ;
 	padding: 0 !important;
-    height: 70px;
-    line-height: 70px;
+    height: 50px;
+    line-height: 50px;
     padding-top: 14px;
     text-align: center;
     color: white;
@@ -269,6 +276,7 @@ footer h5 {
 	font-size: 32px;
 	padding: 10px 0;
 	font-weight: 300;
+	
 }
 
 .about-me p{
@@ -280,11 +288,8 @@ footer h5 {
     line-height: 26px;
 }
 
-.about-me p strong{
-	color: #d81c23;;
+.about-me p strong, .about-me p span{
+	color: #d81c23;
 }
 
-.about-me p span{
-	color: #d81c23;;
-}
 /*about-me ends*/
