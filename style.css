@@ -138,11 +138,12 @@ header img{
 	line-height: 50px;
 	float: left;
 	transition: .5s;
-
+	filter: grayscale(100%);
 }
 
 .contacts a:hover{
 	transform: scale(1.25);
+	filter: grayscale(0%);
 }
 
 
