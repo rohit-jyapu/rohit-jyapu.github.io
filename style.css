@@ -40,6 +40,7 @@ header img{
 
 .myself p{
 	margin: 0px;
+	padding: 0 55px;
     text-align: center;
     line-height: 26px;
     color: #d9d8cf;
@@ -47,14 +48,9 @@ header img{
 }
 
 .myself p strong, .myself p span{
-	/*color: #d81c23;*/
-	/*color: #B4FF7D;*/
-	color: #ff8000;
-	font-weight: 300;
+	color: #555;
+	font-weight: 600;
 }
-
-
-
 
 .myself h2{
 	font-family: 'Open Sans', sans-serif;
@@ -132,7 +128,7 @@ header img{
 }
 
 .contacts a:hover{
-	transform: scale(1.5);
+	transform: scale(1.25);
 }
 
 
