@@ -1,16 +1,13 @@
 body{
 	margin: 0;
-	background: url(images/nature123.jpg) 0 0 no-repeat;
+	background: #262730 url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/noise-bg.png);
 	font-family: 'Open Sans', sans-serif;
-	
-	
 }
 
-@media only screen and (min-width: 770px){
-	body{
-		background-color: ;
-	}
-	
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
 }
 
 .test{
@@ -22,83 +19,63 @@ body{
 .center{
 	width: 960px;
 	margin:auto;
+	background-color: rgba(0,0,0,.3);
 }
-			
-			nav{
-				width: 100%;
-			}
-			nav ul {
-				float: right;
-			    list-style-type: none;
-			    margin: 0;
-			    padding: 0;
-			    overflow: hidden;		
-			    }
-
-			nav li {
-			    float: left;
-			}
-
-			nav li a {
-			    display: block;
-			    color: #ccc;
-			    text-align: center;
-			    padding: 14px 16px;
-			    text-decoration: none;
-			    font-family: 'Open Sans', sans-serif;
-			}
-
-			nav li a:hover {
-			    color: #fff;
-			}
 
 header{
-	background-color: rgba(0,0,0,.3);
-	padding: 50px 0;
+	padding: 50px 0 0 0 !important;
+	margin: 0;
 }
 
 header img{
-	float: left;
-	width: 320px;
+	display: block;
+	width: 200px;
+	border-radius: 50%;
+	border: 5px solid #fff;
 	margin-left: 20px;
 	transition: .5s;
+	margin: 0 375px ;
 }
 
-header img:hover{
-	transform: rotate(7deg);
+
+.myself p{
+	margin: 0px;
+    text-align: center;
+    line-height: 26px;
+    color: #d9d8cf;
+    font-weight: 300;
 }
 
-.clearfix:after{
-	content: '';
-	clear: both;
-	display: block;
+.myself p strong, .myself p span{
+	/*color: #d81c23;*/
+	/*color: #B4FF7D;*/
+	color: #ff8000;
+	font-weight: 300;
 }
 
-.myself{
-	float: left;
-	margin-left: 20px;
-}
 
 
 
 .myself h2{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	color: #fff;
+	color: #d9d8cf;
 	margin: 0;
-	padding-top: 120px;
+	padding: 20px 0;
 	font-size: 40px;
+	text-align: center;
 }
 
 .myself h5{
-	color: #fff;
+	color: #d9d8cf;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
+	text-align: center;
+	margin: 0;
 }
 
 .works{
-	margin-top: 5px;
-	
+	border-top: 2px solid #262730;
 }
 
 .works h4{
@@ -106,7 +83,6 @@ header img:hover{
 	font-weight: 300;
 	font-size: 32px;
 	color: #ccc;
-	background: rgba(0,0,0,.8);
 	margin: 0;
 	padding: 10px 0;
 	text-align: center;
@@ -115,9 +91,7 @@ header img:hover{
 
 .works ul{
 	margin: 0;
-	background-color: rgba(0,0,0,.3);
 	padding: 10px;
-    
 }
 
 .works li{
@@ -132,98 +106,33 @@ header img:hover{
 	text-decoration: none;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
+	font-size: 16px;
 }
 
 .works a:hover{
-	font-weight: 400;
+	color: #fff;
 }
-
-
-@media only screen and (max-width: 770px){
-
-	nav{
-		width: 380px;
-		float: left;
-	}
-	nav ul{
-		float: left;
-		padding-left: 5px;
-	}
-
-	header img{
-		float: left;
-		width: 320px;
-		height: auto;
-	}
-
-	.myself{
-		width:100%;
-		float: left;
-	}
-
-	.myself >h2{
-	font-size: 20px;
-	padding-top: 20px;
-	}
-
-	.myself h5{
-		padding-top: 10px;
-		margin-top: 0;
-	}
-
-	.works h4{
-		text-align: left;
-		padding-left: 30px;
-	}
-}
-
 
 /*contacts starts*/
-.contacts{
-	background:	#333;
-	margin: 0;
-	width: 100%;
-	border-top: 2px solid #4c4c4c;
-	padding: 0;
-}
-
-.contacts .center{
-	background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(red, #333); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(red, #333); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(red, #333); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(red, #333); /* Standard syntax */
-	
-}
-.contacts h4{
-	color: #ccc;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	font-size: 32px;
-	margin: 0;
-	padding: 10px 0;
-	text-align: center;
-	background: #1B1811;
-}
 
 .contact-details{
-	padding: 50px 150px;
+	margin: 50px 320px;
 }
 
 .contacts a{
 	text-decoration: none;
-	margin: 0 41px;
+	margin: 0 7px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	height: 50px;
 	line-height: 50px;
 	float: left;
+	transition: .5s;
 
 }
 
 .contacts a:hover{
-	transform: rotate(360deg);
-	transition: .5s;
+	transform: scale(1.5);
 }
 
 
@@ -242,11 +151,6 @@ header img:hover{
 
 /*footer start*/
 
-footer {
-  background: #d81c23;
-
-}
-
 footer h5 {
 	margin: 0 ;
 	padding: 0 !important;
@@ -261,34 +165,5 @@ footer h5 {
 /*footer ends*/
 
 /*about-me starts*/
-.about-me{
-	color: #ccc;
-    background: rgba(0,0,0,.5);
-    margin-top: 10px;
-}
-
-.about-me h4{
-	margin: 0;
-	background: rgba(0,0,0,.8);
-	padding: 0;
-	text-align: center;
-	font-size: 32px;
-	padding: 10px 0;
-	font-weight: 300;
-	
-}
-
-.about-me p{
-	margin: 0px;
-	padding: 40px 30px;
-	font-family: arial;
-    font-weight: 300;
-    text-align: center;
-    line-height: 26px;
-}
-
-.about-me p strong, .about-me p span{
-	color: #d81c23;
-}
 
 /*about-me ends*/
