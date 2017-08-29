@@ -72,8 +72,8 @@ header img:hover{
 }
 
 .myself p strong, .myself p span{
-	color: #252122;
-	font-weight: 600;
+	color: #55617A;
+	font-weight: 700;
 }
 
 /*works starts*/
@@ -175,7 +175,7 @@ header img:hover{
 	border-radius: 50%;
 	line-height: calc(60px - 12px);
 	font-size: 24px;
-	color: #262626;
+	color: #55617A;
 	transition: .5s;
 }
 
