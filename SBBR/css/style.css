@@ -721,6 +721,7 @@ footer .center > div:last-child > div {
 
 	.slogan-desc p{
 		width: 95%;
+		padding: 0 0 0 5px;
 	}
 }
 
@@ -749,6 +750,10 @@ footer .center > div:last-child > div {
 	    width: auto;
 	    text-align: left;
 	}
+
+	.slogan-desc h3{
+		margin: 20px 0px;
+	}
 }
 
 
@@ -763,6 +768,18 @@ footer .center > div:last-child > div {
 
 	.tab-details{
 		width: 250px;
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 450px){
+	.tab-bar a{
+		padding: 0 5px;
+		font-size: 14px;
+	}
+
+	.tabs{
+		width: 100% !important;
 	}
 }
 
