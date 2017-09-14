@@ -1,4 +1,4 @@
-/* Global start */
+ /*Global start */
 
 body{
 	margin: 0;
@@ -7,14 +7,17 @@ body{
 
 img{
 	display: block;
+	max-width: 100%;
 }
+
+
 
 /* Global end */
 
 /* Common start */
 
 .center{
-	width: 960px;
+	max-width: 960px;
 	margin: auto;
 }
 
@@ -70,7 +73,11 @@ nav ul{
 nav li{
 	list-style: none;
 	float: left;
+	margin-left: 20px;
+}
 
+nav li:fist-child{
+	margin-left: 0px;
 }
 
 nav a{
@@ -80,11 +87,11 @@ nav a{
 	font-size: 14px;
 	height: 44px;
 	line-height: 44px;
-	padding: 0 16px;
 }
 
 nav ul .active{
 	background-color: black;
+	padding: 0 16px;
 }
 
 nav a:hover{
@@ -94,6 +101,48 @@ nav a:hover{
 nav ul .active:hover{
 	color: white;
 	cursor: default;
+}
+
+.nbtn{
+	display: block;
+	padding: 15px 0 0 20px;
+	height: 44px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.nbtn-top{
+	width: 20px;
+	height: 5px;
+	background: #fff200;
+	position: absolute;
+	right: 20px;
+}
+
+.nbtn-bottom{
+	width: 20px;
+	height: 5px;
+	background: #fff200;
+	margin-top: 10px;
+	position: absolute;
+	right: 20px;
+}
+
+.open{
+	position: relative;
+}
+
+.open .nbtn-top{
+	transform: rotate(45deg);
+	position: absolute;
+	top: 20px;
+}
+
+.open .nbtn-bottom{
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 15px;
+	margin-top: 5px;
 }
 
 /* Nav end */
@@ -130,49 +179,6 @@ header{
 	margin-top: -37px;
 }
 
-/*.social a{
-	float: left;
-	margin-left: 11px;
-	background-image: url(../images/icons-social.png);
-	background-repeat: no-repeat;
-	width: 37px;
-	height: 37px;
-	transition: .5s;
-}
-
-.social .facebook{
-	background-position: 0 0;
-}
-
-.social .facebook:hover{
-	background-position: 0 -37px;
-}
-
-.social .twitter{
-	background-position: -37px 0;
-}
-
-.social .twitter:hover{
-	background-position: -37px -37px;
-}
-
-.social .linkedin{
-	background-position: -74px 0;
-}
-
-.social .linkedin:hover{
-	background-position: -74px -37px;
-}
-
-.social .googleplus{
-	background-position: -111px 0;
-}
-
-.social .googleplus:hover{
-	background-position: -111px -37px;
-}*/
-
-
 /*Header ends*/
 
 /*Banner ends*/
@@ -181,7 +187,6 @@ header{
 	background: url(../images/banner.png) center top;
 	letter-spacing: 63px;
 	text-align: center;
-
 }
 
 .battery{
@@ -196,7 +201,10 @@ header{
 	vertical-align: middle;
 	letter-spacing: 0;
 	text-align: left;
+}
 
+.black-background{
+	display: inline-block;
 }
 
 .our-products ul{
@@ -216,7 +224,6 @@ header{
 }
 
 /*Banner ends*/
-
 
 /*About starts*/
 
@@ -257,7 +264,7 @@ header{
 .feature .center div{
 	float: left;
 	padding: 30px 0 0 0;
-
+	box-sizing: border-box;
 }
 
 .feature .center .middle{
@@ -408,8 +415,283 @@ footer{
 
 .botfoot h3{
 	float: right;
-	margin-top: 10px;
+	margin: 10px 0 0 0;
 	font-size:20px;
 }
 
 /*Footer ends*/
+
+/*responsive starts*/
+@media only screen and (min-width: 769px){
+	.nbtn{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1020px){
+	.fleft{
+		padding-left: 10px;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 980px){
+	.feature .center{
+		text-align: center;
+	}
+	.feature span{
+		float: none;
+		padding: 5px 0 0 0;
+	}
+
+	.feature .center > div{
+		padding: 20px 0;
+		margin: 0;
+		text-align: center;
+		display: inline-block;
+		float: none;
+	}
+
+	.feature .center .middle{
+		margin: 0;
+		padding: 20px 0 0 0;
+		padding: 0 10px;
+		margin: 0 10px;
+		padding-top: 20px;
+	}
+
+	.feature .center > div img{
+		float: none;
+		display: inline-block;
+	}
+}
+
+@media only screen and (max-width: 940px){
+	.fleft{
+		padding-left: 10px;
+		width: 50%;
+	}
+
+	.fright{
+		margin-left: 0;
+		width: 48%;
+	}
+
+}
+
+@media only screen and (max-width: 900px){
+	.black-background{
+		background: #000;
+		width: 100%;
+		border-top: 2px solid #fff;
+	}
+	.our-products{
+		padding: 10px 20px;
+		vertical-align: none;
+}
+
+@media only screen and (max-width: 768px){
+	nav ul{
+		display: none;
+	}
+
+	nav li{
+		display: block;
+	}
+
+	.open ul{
+		float: none;
+		display: block;
+	}
+
+	.open li{
+		float: none;
+		display: block;
+		margin-left: 0;
+		border-bottom: 1px solid #fff;
+	}
+
+	.open li:first-child{
+		border-top: 1px solid #fff;
+	}
+
+	.open li a{
+		padding-left: 20px;
+	}
+
+	.open li:hover{
+		background: #ff3300;
+	}
+
+	.open li:hover a{
+		color: #fff;
+	}
+
+	.about h1{
+		font-size: 28px;
+		margin-top: 15px;
+	}
+
+	.about p{
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
+
+@media only screen and (max-width: 740px){
+
+	footer .center{
+		text-align: center;
+	}
+
+	.fleft{
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.fright{
+		width: 100%;
+	}
+
+	.centralize{
+		display: inline-block;
+	}
+
+	.fleft div{
+		display: inline-block;
+	}
+
+	.fright div{
+		float: none;
+		display: inline-block;
+	}
+
+	.botleft{
+		float: none;
+		text-align: center;
+	}
+
+	.botleft p{
+		float: none;
+		display: inline-block;
+		margin-bottom: 0;
+	}
+
+	.botleft img{
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0px;
+	}
+
+	.botleft a{
+		float: none;
+		display: inline-block;
+	}
+
+	.botfoot h3{
+		float: none;
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 540px){
+	.red{
+		text-align: center;
+	}
+
+	.red-first{
+		width: 100%;
+		float: none;
+		display: inline-block;
+	}
+
+	.fright .red-first{
+		float: none;
+		display: inline;
+	}
+
+	.red div{
+		float: none;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 480px){
+
+	header{
+		padding: 15px 0;
+	}
+
+	header .center{
+		text-align: center;
+	}
+
+	.logo{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+
+	.logo img{
+		display: inline-block;
+	}
+
+	.social{
+		float: none;
+		display: inline-block;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.social a{
+		float: none;
+		display: inline-block;
+	}
+
+	.feature .center{
+		text-align: center;
+	}
+
+	.feature .center >div{
+		padding-bottom: 20px;
+		width: 100%;
+		display: inline-block;
+	}
+	.feature  .center .middle{
+		margin: 0;
+		padding: 20px 0;
+		border-right: none;
+		border-left: none;
+		border-top: 1px dashed #737373;
+		border-bottom: 1px dashed #737373;
+	}
+
+	.feature img{
+		float: none;
+		display: inline-block;
+		
+	}
+
+	.feature span{
+		float: none;
+		display: inline-block;
+	}
+
+
+}
+
+@media only screen and (max-width: 375px){
+	.fleft ul{
+		float: none;
+		padding: 0;
+	}
+}
+
+
+@media only screen and (max-width: 350px){
+	.feature span{
+		float: none;
+	}
+}
+
+/*responsive ends*/

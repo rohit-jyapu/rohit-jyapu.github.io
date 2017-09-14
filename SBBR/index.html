@@ -6,18 +6,18 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
-
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 </head>
 <body>
 
 	<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
 	<!-- Header starts -->
 	<header>
@@ -38,8 +38,6 @@
 				<a href="#">Create a account</a>
 			</form>
 
-
-
 		</div>
 	</header>
 	<!-- Header ends -->
@@ -48,6 +46,13 @@
 
 	<nav>
 		<div class="center clearfix">
+
+			<a class="loginbutton"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+
+			<div class="navbars">
+				<a id="nav-toggle" href="#"><span></span></a>
+			</div>
+
 			<ul>
 				<li><a href="#" class="active">Home</a></li>
 				<li><a href="#">About us</a></li>
@@ -59,6 +64,7 @@
 				<li><a href="#">Contacts</a></li>
 				<li><a href="#">Forms</a></li>
 			</ul>
+
 		</div>
 	</nav>
 
@@ -108,54 +114,61 @@
 				
 			</div>
 
-			<div class="tabs">
-				<ul class="tab-bar clearfix">
-					<li><a href="#" class="active">All News<span></span></a></li>
-					<li><a href="#">Programs</a></li>
-					<li><a href="#">Announcement<strong>1<small></small></strong></a></li>
-				</ul>
+				<div id="tabs" class="tabs show-tabs1">
+				  <ul class="tab-bar clearfix">
+				    <li><a href="javascript:void(0);">All News</a></li>
+				    <li><a href="javascript:void(0);">Programs</a></li>
+				    <li><a href="javascript:void(0);">Announcement<strong>1<small></small></strong></a></li>
+				  </ul>
+				  <div id="tabs-1" class="tab-contents">
+					    <ul>
+							<li class="clearfix">
+								<div class="tab-date">
+									<strong>17</strong>
+									<span>APR</span>
+								</div>
 
-				<div class="tab-contents">
-					<ul>
-						<li class="clearfix">
-							<div class="tab-date">
-								<strong>17</strong>
-								<span>APR</span>
-							</div>
+								<div class="tab-details">
+									<h3>General Banking Training Course starts on 24 April 2012</h3>
+									<p>Simulation based General Banking Training Courses and thats all ... </p>
+								</div>
+							</li>
 
-							<div class="tab-details">
-								<h3>General Banking Training Course starts on 24 April 2012</h3>
-								<p>Simulation based General Banking Training Courses and thats all ... </p>
-							</div>
-						</li>
+							<li class="clearfix">
+								<div class="tab-date">
+									<strong>03</strong>
+									<span>APR</span>
+								</div>
 
-						<li class="clearfix">
-							<div class="tab-date">
-								<strong>03</strong>
-								<span>APR</span>
-							</div>
+								<div class="tab-details">
+									<h3>General Banking Training Course starts on 24 April 2012</h3>
+									<p>Simulation based General Banking Training Courses and thats all ... </p>
+								</div>
+							</li>
 
-							<div class="tab-details">
-								<h3>General Banking Training Course starts on 24 April 2012</h3>
-								<p>Simulation based General Banking Training Courses and thats all ... </p>
-							</div>
-						</li>
+							<li class="clearfix">
+								<div class="tab-date">
+									<strong>03</strong>
+									<span>APR</span>
+								</div>
 
-						<li class="clearfix">
-							<div class="tab-date">
-								<strong>03</strong>
-								<span>APR</span>
-							</div>
+								<div class="tab-details">
+									<h3>General Banking Training Course starts on 24 April 2012</h3>
+									<p>Simulation based General Banking Training Courses and thats all ... </p>
+								</div>
+							</li>
+						</ul>
+				  </div>
 
-							<div class="tab-details">
-								<h3>General Banking Training Course starts on 24 April 2012</h3>
-								<p>Simulation based General Banking Training Courses and thats all ... </p>
-							</div>
-						</li>
-					</ul>
+				  	<div id="tabs-2" class="tab-contents">
+				    	<p>Program tabs. Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+				  	</div>
+
+				  <div id="tabs-3" class="tab-contents">
+					    <p>This is announcement tab. Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+					    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+				  </div>
 				</div>
-
-			</div>
 
 		</div>
 	</div>
@@ -236,9 +249,7 @@
 				<div>
 					<div class="g-plusone" data-size="medium"></div>
 				</div>
-		
-
-		
+			</div>
 
 		</div>
 
@@ -247,14 +258,75 @@
 	<!-- footer ends -->
 
 	<div class="foot">
-			<div class="center clearfix">
-				<div class="fdetails">
-				<p><a href="#">Sitemap</a> / <a href="#">Terms & Conditions</a> / <a href="#">Privacy policy</a>  | Copyright © 2012 SBBR, All Rights Reserved  |  Designed by:</p>
-				<img src="images/icon-tqid.png" alt="tqid logo image">
-				<a href="#" class="unique">TQID</a>
-				</div>
+		<div class="center clearfix">
+			<div class="fdetails">
+			<p><a href="#">Sitemap</a> / <a href="#">Terms & Conditions</a> / <a href="#">Privacy policy</a>  | Copyright © 2012 SBBR, All Rights Reserved  |  Designed by:</p>
+			<img src="images/icon-tqid.png" alt="tqid logo image">
+			<a href="#" class="unique">TQID</a>
 			</div>
 		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+	<script>
+
+		// navigation menu open // 
+		 $(document).on('click', 'nav .navbars', function (event) {
+  			 		    $('nav').addClass('open');
+  				    });
+      				$(document).on('click', '.open .navbars', function (event) {
+      			 		$('nav').removeClass('open');
+      				});
+		// navigation menu open // 
+
+		//loginbutton form show//
+		 $(document).on('click', 'nav .loginbutton', function (event) {
+  			 		    $('form').addClass('show');
+  			 		    $('nav .center > a').addClass('show');
+  				    });
+		 			$(document).on('click', '.show', function (event) {
+      			 		$('form').removeClass('show');
+      			 		$('nav .center > a').removeClass('show');
+      				});
+		//loginbutton form show//
+
+		//tab buttons //
+		$(document).on('click', '.tab-bar li a', function (event) {
+  			 		    $('.tabs').removeClass('show-tabs1') .removeClass('show-tabs2') .removeClass('show-tabs3');
+  			 		});
+
+		$(document).on('click', '.tab-bar li:nth-child(1) a', function (event) {
+  			 		    $('.tabs').addClass('show-tabs1');
+  				    });
+		$(document).on('click', '.tab-bar li:nth-child(2) a', function (event) {
+  			 		    $('.tabs').addClass('show-tabs2');
+  				    });
+
+		$(document).on('click', '.tab-bar li:nth-child(3) a', function (event) {
+  			 		    $('.tabs').addClass('show-tabs3');
+  				    });
+		//tab buttons //
+
+		//tab bar contents //
+		$(document).on('click', '.tab-bar li:nth-child(1) a', function (event) {
+						$('.tab-bar li:nth-child(2)').removeClass('tab-active');
+						$('.tab-bar li:nth-child(3)').removeClass('tab-active');
+  			 		    $('.tab-bar li:nth-child(1)').addClass('tab-active');
+  				    });
+		$(document).on('click', '.tab-bar li:nth-child(2) a', function (event) {
+  			 		    $('.tab-bar li:nth-child(2)').addClass('tab-active');
+						$('.tab-bar li:nth-child(1)').removeClass('tab-active');
+						$('.tab-bar li:nth-child(3)').removeClass('tab-active');
+  				    });
+		$(document).on('click', '.tab-bar li:nth-child(3) a', function (event) {
+  			 		    $('.tab-bar li:nth-child(3)').addClass('tab-active');
+						$('.tab-bar li:nth-child(1)').removeClass('tab-active');
+						$('.tab-bar li:nth-child(2)').removeClass('tab-active');
+  				    });
+		//tab bar contents //
+
+	</script>
 
 </body>
 </html>
