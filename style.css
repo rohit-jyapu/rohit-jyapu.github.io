@@ -42,14 +42,15 @@ header img:hover{
 	transform: scale(.98);
 }
 
-.myself h2{
-	font-weight: 400;
-	color: #fff;
-	margin: 0;
-	padding: 20px 0;
-	font-size: 40px;
-	text-align: center;
-	text-shadow: 3px 3px 10px #3b5998;
+.myself h2 {
+    font-weight: 600;
+    color: #3b5998;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
 
 .myself h5{
